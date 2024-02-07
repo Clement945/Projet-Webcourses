@@ -101,7 +101,7 @@ try {
 
         echo '<hr/>';
         
-        // Vérifions si une option a été sélectionnée dans le formulaire
+        // Vérifions si une option a été sélectionnée dans le formulaire !
         if(isset($_POST['type'])) {
             $type = $_POST['type'];
 
