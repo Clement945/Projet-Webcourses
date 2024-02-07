@@ -1,0 +1,194 @@
+/*body de base */
+
+body{
+    background-color: gray;
+    font-family: Arial;
+    margin: 0;  
+}
+/*header*/
+
+
+#image1{
+    position: absolute;  /* centre l'image et permet de ne pas bouger l'image */
+    top: 20px; /*modifié */
+    
+    left: 30px;
+    width: 110px;
+    height: 90px;
+    clip-path: circle(45%);
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav{
+  
+    text-align: center;
+    background-color:black;
+    margin:0;
+
+ 
+
+}
+
+nav ul li{
+    display : inline-block;
+    line-height: 2rem;
+    padding: 1rem;
+    color:#FFFFFF;
+
+}
+
+ul{
+    margin: 0;
+}
+
+
+#information{
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+
+#form-container {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* pour centrer verticalement */
+  }
+
+#form-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px
+    
+}
+
+/*
+
+.inner2{
+    margin-left: 550px;
+}
+
+
+#cookie{
+    margin-left: -18px;
+    font-weight: bold
+}
+
+#liste{
+    margin-left: 20px;
+}
+
+#cookie2{
+    margin-left: -15px;
+    font-weight: bold;
+}
+
+#cookie3{
+    margin-left: -15px;
+    font-weight: bold;
+}
+
+#cookie4{
+    margin-left: -15px;
+    font-weight: bold;
+}
+
+#cookie5{
+    margin-left: -15px;
+    font-weight: bold;
+}
+
+#cookie6{
+    margin-left: -15px;
+    font-weight: bold;
+}
+
+
+#nomm2{
+    margin-left: 25px;
+    font-weight: bold;
+
+}
+
+input[type=submit]{
+    margin-left: 53px;
+}
+
+*/
+
+
+/*deconnexion */
+
+
+#deco a{
+    color:#FFFFFF;
+}
+
+#deco {
+    text-align: right;
+    margin: 0;
+    position: relative;
+    bottom: 90px;
+    right: 30px;
+}
+
+.deco-link {
+    /* Ajoutez des bordures à la div qui englobe le lien */
+    border: 1px solid #FFFFFF; /* Bordure solide blanche de 1 pixel */
+    border-radius: 5px; /* Coins arrondis de 5 pixels */
+    display: inline-block; /* Permet à la bordure de s'ajuster au contenu */
+    padding: 5px; /* Espacement interne pour la bordure */
+}
+
+
+
+
+
+
+/* footer */   /*3*/
+ 
+
+footer p{
+    text-align: center;
+}
+
+
+
+footer{
+    color: #000000;
+    background-color: #FFFFFF;
+    margin-top: 80px;
+    text-align: center;
+    margin:0;
+
+    
+}
+
+
+#footer{
+    font-size: 15px;
+    color: #000000;
+}
+
+footer{
+    margin-top: 80px;
+}
+
+footer p a{
+    color:#000000;
+}
+
+footer p{
+    display : inline-block;
+    line-height: 0px;
+    padding: 1rem;
+}

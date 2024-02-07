@@ -1,0 +1,53 @@
+body{
+    background-color: gray;
+    font-family: Arial;
+    margin: 0;  
+}
+
+#image1{
+    position: absolute;  /* centre l'image et permet de ne pas bouger l'image */
+    top: 20px; /*modifié */
+    
+    left: 30px;
+    width: 110px;
+    height: 90px;
+    clip-path: circle(45%);
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav{
+  
+    text-align: center;
+    background-color:black;
+    margin:0;
+
+ 
+
+}
+
+nav ul li{
+    display : inline-block;
+    line-height: 2rem;
+    padding: 1rem;
+    color:#FFFFFF;
+
+}
+
+ul{
+    margin: 0;
+}
+
+p{
+    text-align: center;
+}
+
+#pseudo{
+    text-align: center;
+    font-weight: bold;
+}

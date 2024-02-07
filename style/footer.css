@@ -1,0 +1,87 @@
+body{
+    background-color: gray;
+    font-family: Arial;
+    margin: 0;  
+}
+
+
+footer p{
+    text-align: center;
+}
+
+
+
+footer{
+    color: #000000;
+    background-color: #FFFFFF;
+    margin-top: 80px;
+    text-align: center;
+    margin:0;
+
+    
+}
+
+
+#footer{
+    font-size: 15px;
+    color: #000000;
+}
+
+footer p a{
+    color:#000000;
+}
+
+footer p{
+    display : inline-block;
+    line-height: 0px;
+    padding: 1rem;
+}
+
+/* la balise <a> n'est pas modifié ici car déjà modifié dans header.css*/
+
+.banniere{
+    border-top: solid 2px white;
+    background: rgba(0, 0, 0, 0.911);
+    position: fixed;
+    bottom: 0;
+    left: 0;   /*pas obligé */
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    }
+
+#tout{
+    text-align: center;
+    line-height: 48px;
+}
+
+.text-banniere p{
+    font-size: larger;
+}
+
+.consent-popup .button-banniere-accept a{
+    border: solid 1px rgb(255, 255, 255);
+    padding: 10px;
+    background: rgb(35, 175, 23);
+    border-radius: 7px;
+}
+
+.consent-popup .button-banniere-refuse a{
+    border: solid 1px rgb(255, 255, 255);
+    padding: 10px;
+    background: rgb(216,30,30);
+    border-radius: 7px;
+}
+
+.consent-popup .button-banniere-perso a{
+    border: solid 1px rgb(255, 255, 255);
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+/* .invisible {
+    display: none;
+  } */

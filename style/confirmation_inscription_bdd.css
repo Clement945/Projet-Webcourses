@@ -1,0 +1,113 @@
+body{
+    background-color: gray;
+    font-family: Arial;
+    margin: 0;  
+}
+
+.tetepage{
+    text-align: center;
+}
+
+#nouveau{
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+#reussi{
+    text-align: center;
+}
+
+
+#nouveau2{
+    text-align: center;
+}
+
+#remplir{
+    text-align: center;
+}
+
+
+
+/*header */
+
+
+
+#image1{
+    position: absolute;  /* centre l'image et permet de ne pas bouger l'image */
+    top: 20px; /*modifié */
+    
+    left: 30px;
+    width: 110px;
+    height: 90px;
+    clip-path: circle(45%);
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav{
+  
+    text-align: center;
+    background-color:black;
+    margin:0;
+
+ 
+
+}
+
+nav ul li{
+    display : inline-block;
+    line-height: 2rem;
+    padding: 1rem;
+    color:#FFFFFF;
+
+}
+
+ul{
+    margin: 0;
+}
+
+
+
+/* footer */
+
+
+footer p{
+    text-align: center;
+}
+
+
+
+footer{
+    color: #000000;
+    background-color: #FFFFFF;
+    margin-top: 80px;
+    text-align: center;
+    margin:0;
+
+    
+}
+
+
+#footer{
+    font-size: 15px;
+    color: #000000;
+}
+
+footer{
+    margin-top: 260px;
+}
+
+footer p a{
+    color:#000000;
+}
+
+footer p{
+    display : inline-block;
+    line-height: 0px;
+    padding: 1rem;
+}

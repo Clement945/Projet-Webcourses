@@ -1,0 +1,210 @@
+/*body de base */
+
+body{
+    background-color: gray;
+    font-family: Arial;
+    margin: 0;  
+}
+
+/*code page */
+
+#epreuve{
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-field{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px
+    
+}
+
+
+/*header */
+
+
+
+#image1{
+    position: absolute;  /* centre l'image et permet de ne pas bouger l'image */
+    top: 20px; /*modifié */
+    
+    left: 30px;
+    width: 110px;
+    height: 90px;
+    clip-path: circle(45%);
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav{
+  
+    text-align: center;
+    background-color:black;
+    margin:0;
+
+ 
+
+}
+
+nav ul li{
+    display : inline-block;
+    line-height: 2rem;
+    padding: 1rem;
+    color:#FFFFFF;
+
+}
+
+ul{
+    margin: 0;
+}
+
+/*code page */
+/*
+.inner3{
+    margin-left: 550px;
+}
+
+#epreuve{
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+input[type=submit]{
+    margin-left: 50px;
+}
+
+label{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#inscri{
+    margin-left:8px;
+}
+
+#date_inscription{
+    margin-left: 14px;
+}
+
+#nom1{
+    margin-left: 50px;
+}
+
+#prenom2{
+    margin-left: 40px;
+}
+
+#sexe1{
+    margin-left: 50px;
+}
+
+#sexe{
+    margin-left: 35px;
+}
+
+#age1{
+    margin-left: -10px;
+}
+
+#age{
+    margin-left: 28px;
+}
+
+#epreuve1{
+    margin-right: 0px;
+}
+
+#epreuve2{
+    margin-left: 0px;
+}
+
+#dateheure{
+    margin-left: -130px;
+}
+
+#date_heure_nom{
+    margin-left: -60px;
+}
+
+#parcours{
+    margin-left: -90px;
+}
+
+#taille{
+    margin-left: -10px;
+}
+
+#taille_maillot{
+    margin-left: 30px;
+}
+
+#temps_annoncer{
+    margin-left: -60px;
+}
+
+#temps_annoncer1{
+    margin-left: 0px;
+}
+
+#numero{
+    margin-left: -20px;
+}
+*/
+
+
+/* footer */
+
+
+footer p{
+    text-align: center;
+}
+
+
+
+footer{
+    color: #000000;
+    background-color: #FFFFFF;
+    margin-top: 80px;
+    text-align: center;
+    margin:0;
+
+    
+}
+
+
+#footer{
+    font-size: 15px;
+    color: #000000;
+}
+
+footer{
+    margin-top: 80px;
+}
+
+footer p a{
+    color:#000000;
+}
+
+footer p{
+    display : inline-block;
+    line-height: 0px;
+    padding: 1rem;
+}
+
