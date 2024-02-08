@@ -20,7 +20,7 @@
 
 
 <br/>
-    <h2 id="b">Le site des courses de vélo/cycliste pour amateurs et professionnels</h2>
+    <h2 id="b">Le site des courses pour amateurs et professionnels</h2>
 
     <br/>
 
