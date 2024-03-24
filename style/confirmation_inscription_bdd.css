@@ -72,6 +72,25 @@ ul{
 }
 
 
+#deco {
+    text-align: right;
+    margin: 0;
+    position: relative;
+    bottom: 90px;
+    right: 30px;
+}
+
+.deco-link {
+    /* Ajoutez des bordures à la div qui englobe le lien */
+    border: 1px solid #FFFFFF; /* Bordure solide blanche de 1 pixel */
+    border-radius: 5px; /* Coins arrondis de 5 pixels */
+    display: inline-block; /* Permet à la bordure de s'ajuster au contenu */
+    padding: 5px; /* Espacement interne pour la bordure */
+}
+
+
+
+
 
 /* footer */
 

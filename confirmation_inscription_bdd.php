@@ -1,3 +1,6 @@
+<?php session_start()
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -22,12 +25,27 @@
             <li><a href="qui_sommes_nous.php">Qui sommes-nous ?</a></li>
             <li><a href="calendrier_evenementiel.php">Calendrier évènementiel</a></li>
             <li><a href="info_club.php">Informations Club</a></li></br>
-            <li><a href="nouveau_membre.php">Nouveau membre</a></li>
-            <li><a href="connexion.php">Déjà inscrit</a></li>
+            <?php
+            if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] === false) {
+                echo '<li><a href="nouveau_membre.php">Nouveau membre</a></li>';
+            }
+            ?>
+            <?php if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] === false) {
+                echo '<li><a href="connexion.php">Déjà inscrit</a></li>';
+            }
+            ?>
             <li><a href="inscription_evenement.php">Inscription événement</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>
     </nav>
+
+
+    <?php
+if (isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'] === true) {
+    // Affichez le bouton de déconnexion avec une bordure
+    echo '<div id="deco"><div class="deco-link"><a href="deconnexion.php">Déconnexion</a></div></div>';
+}
+?>
 
 
 
@@ -87,7 +105,7 @@ try {
         $stmt = $bdd->query($sql);
         $ins_dossard = $stmt->fetch(PDO::FETCH_ASSOC)['ins_dossard'];
 
-        echo('<p id="nouveau2">Le nouveau championnat avec insert requête préparée a bien été enregistré avec les données suivantes : 
+        echo('<p id="nouveau2">Le nouveau championnat a bien été enregistré avec les données suivantes : 
         </p>'.'<p id="nouveau">Le numéro de la carte de licence : ' .$_POST['licence'].'<br/> 
         La catégorie de personne : '.$_POST['categorie_person'].' <br/>
         L\'épreuve choisi : ' .$_POST['epreuve_choisi'].'<br/> 
@@ -100,7 +118,13 @@ try {
         echo '<p class="tetepage">Merci pour votre inscription. Votre numéro d\'inscription est le '. $nouvel_id. '</p>';
 
         echo '<hr/>';
+
+
+
+
+
         
+      
         // Vérifions si une option a été sélectionnée dans le formulaire !
         if(isset($_POST['type'])) {
             $type = $_POST['type'];
@@ -147,6 +171,10 @@ try {
         } else {
             echo "<p id='remplir'>Veuillez remplir tous les champs obligatoires pour amateur.</p>";
         }
+
+
+
+        
     } else {
         echo "<p id='remplir'>Veuillez remplir tous les champs obligatoires.</p>";
     }

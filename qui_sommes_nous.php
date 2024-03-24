@@ -20,9 +20,19 @@
             <li><a href="qui_sommes_nous.php">Qui sommes-nous ?</a></li>
             <li><a href="calendrier_evenementiel.php">Calendrier évènementiel</a></li>
             <li><a href="info_club.php">Informations Club</a></li></br>
-            <li><a href="nouveau_membre.php">Nouveau membre</a></li>
-            <li><a href="connexion.php">Déjà inscrit</a></li>
-            <li><a href="inscription_evenement.php">Inscription événement</a></li>
+            <?php
+            if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] === false) {
+                echo '<li><a href="nouveau_membre.php">Nouveau membre</a></li>';
+            }
+            ?>
+            <?php if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] === false) {
+                echo '<li><a href="connexion.php">Déjà inscrit</a></li>';
+            }
+            ?>
+            <?php
+            if (isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'] === true) 
+            echo '<li><a href="inscription_evenement.php">Inscription événement</a></li>'
+            ?>
             <li><a href="contact.php">Contact</a></li>
         </ul>
     </nav>
